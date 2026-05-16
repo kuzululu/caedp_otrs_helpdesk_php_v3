@@ -1,0 +1,56 @@
+.print{
+  display: none;
+}
+/*
+.footerMsg{
+ position: fixed;
+ bottom: 0;
+ display: none;
+}*/
+
+@media print{
+	@page{
+		margin: 0;
+	}
+
+	@page{
+		size: A4 landscape;
+		margin-right: .5rem;
+		margin-left: .5rem;
+		margin-top: 5mm;
+		margin-bottom: 10mm;
+    	border: initial;
+   	 	border-radius: initial;
+   	 	width: initial;
+	    min-height: initial;
+	    box-shadow: initial;
+	    background: initial;
+	    page-break-after: always;
+	    background-color: white;
+	}
+ 
+	table{
+		border-collapse: collapse;
+	}
+
+	/*#img{
+		display: inline-block !important;
+	}
+*/
+	.hidden{
+	 display: none !important;
+	}
+
+	.img{
+		top: 1em;
+		left: 15em;
+	}
+
+	/*.footerMsg{
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    page-break-inside: avoid;
+  }*/
+}
